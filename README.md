@@ -5,9 +5,9 @@ The next evolution of fineract focussing on being faster, lighter and cheaper to
 
 Requirements
 ============
-. Java >= 1.8 (Oracle JVMS have been tested)
-. gradle-wrapper.jar version 2.10
-. MySQL 5.5
+- Java >= 1.8 (Oracle JVMS have been tested)
+- gradle-wrapper.jar version 2.10
+- MySQL 5.5
 
 Instructions to build war file
 ============
@@ -24,8 +24,8 @@ Instructions to execute Integration tests
 2. Create mifosplatform-tenants database using create database `mifosplatform-tenants`;
 3. Create default tenant database using create database `mifostenant-default`;
 4. With fineract-provider as current working directory run below commands
-4.a. ./gradlew migrateTenantListDB -PdbName=mifosplatform-tenants
-4.b. ./gradlew migrateTenantDB -PdbName=mifostenant-default
+   a. ./gradlew migrateTenantListDB -PdbName=mifosplatform-tenants
+   b. ./gradlew migrateTenantDB -PdbName=mifostenant-default
 5. Run './gradlew clean integrationTest -PbuildType=TEST'
 
 
