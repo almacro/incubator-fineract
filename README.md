@@ -24,8 +24,8 @@ Instructions to execute Integration tests
 2. Create mifosplatform-tenants database using create database `mifosplatform-tenants`;
 3. Create default tenant database using create database `mifostenant-default`;
 4. With fineract-provider as current working directory run below commands
-   a. ./gradlew migrateTenantListDB -PdbName=mifosplatform-tenants
-   b. ./gradlew migrateTenantDB -PdbName=mifostenant-default
+   * ./gradlew migrateTenantListDB -PdbName=mifosplatform-tenants
+   * ./gradlew migrateTenantDB -PdbName=mifostenant-default
 5. Run './gradlew clean integrationTest -PbuildType=TEST'
 
 
